@@ -20,8 +20,18 @@
           <a class="nav-item nav-link" href="/novo">Novo</a>
         </li>
       </ul>
+      <span class="navbar-text mr-2">
+        {% if usuario != None %}
+          {{ usuario }}
+        {% endif %}
+      </span>
       <span class="form-inline my-2 my-lg-0">
-        <a href="/logout" class="btn btn-outline-danger my-2 my-sm-0">Logout</a>
+          {% if usuario != None %}
+            <a href="/logout" class="btn btn-outline-danger my-2 my-sm-0">Logout</a>
+          {% else %}
+            <a href="/login">Realizar login</a>
+          {% endif %}
+
       </span>
     </div>
   </nav>
