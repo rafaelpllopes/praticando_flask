@@ -12,7 +12,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="/">Navbar</a>
 
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -26,10 +26,10 @@
         {% endif %}
       </span>
       <span class="form-inline my-2 my-lg-0">
-          {% if usuario != None %}
-            <a href="/logout" class="btn btn-outline-danger my-2 my-sm-0">Logout</a>
-          {% else %}
+          {% if usuario == None %}
             <a href="/login">Realizar login</a>
+          {% else %}
+            <a href="/logout" class="btn btn-outline-danger my-2 my-sm-0">Logout</a>
           {% endif %}
 
       </span>
