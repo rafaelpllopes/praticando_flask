@@ -27,6 +27,7 @@ cursor.execute(
     INSERT INTO usuario (id, nome, senha) VALUES ('admin', 'Administrador', 'admin');
     """
 )
+conn.commit()
 
 cursor.executemany(
       'INSERT INTO jogo (nome, categoria, console) VALUES (?, ?, ?)',
@@ -38,6 +39,8 @@ cursor.executemany(
             ('Super Mario Kart', 'Corrida', 'SNES'),
             ('Fire Emblem Echoes', 'Estratégia', '3DS')
       ])
+
+conn.commit()
 
 conn.close()
 

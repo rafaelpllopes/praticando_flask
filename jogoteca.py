@@ -1,31 +1,13 @@
 from flask import Flask, render_template, request, redirect, session, flash, url_for
+from dao import JogoDao, UsuarioDao
+from models import Jogo, Usuario
 
 app = Flask(__name__)
 
 app.secret_key = 'teste'
 
-class Jogo:
-    def __init__(self, nome, categoria, console):
-        self.nome = nome
-        self.categoria = categoria
-        self.console = console
-
-class Usuario:
-    def __init__(self, id, nome, senha):
-        self.id = id
-        self.nome = nome
-        self.senha = senha
-
-usuario1 = Usuario('teste1', 'Usuario teste 1', '1234')
-usuario2 = Usuario('teste2', 'Usuario teste 2', '5678')
-
-usuarios = {usuario1.id: usuario1,
-            usuario2.id: usuario2}
-
-lista = []
-lista.append(Jogo('Super Mario', 'Ação', 'SNES'))
-lista.append(Jogo('Pokemon Gold', 'RPG', 'GBA'))
-lista.append(Jogo('Mortal Kombat', 'Luta', 'SNES'))
+jogo_dao = JogoDao()
+usuario_dao = UsuarioDao()
 
 @app.route('/')
 def index():
@@ -33,6 +15,8 @@ def index():
         usuario = session['usuario_logado']
     except KeyError:
         usuario = None
+
+    lista = jogo_dao.listar()
 
     return render_template('lista.html', titulo='Jogos', jogos=lista, usuario=usuario)
 
@@ -48,7 +32,7 @@ def criar():
     nome = request.form['nome']
     categoria = request.form['categoria']
     console = request.form['console']
-    lista.append(Jogo(nome, categoria, console))
+    jogo_dao.salvar(Jogo(nome, categoria, console))
     return redirect(url_for('index'))
 
 @app.route('/login')
@@ -58,20 +42,13 @@ def login():
 
 @app.route('/autenticar', methods=['POST'])
 def autenticar():
-    usuario = request.form['usuario']
-    senha = request.form['senha']
-    print(usuario in usuarios)
-    print(usuarios['teste1'].id)
-    if usuario in usuarios:
-        user = usuarios[usuario]
-        if user.senha == senha:
-            session['usuario_logado'] = user.id
-            flash(user.nome + ' logou com sucesso!')
-            proxima_pagina = request.form['proxima']
-            return redirect(proxima_pagina)
-        else:
-            flash('Usuario ou senha incorreto')
-            return redirect(url_for('login'))
+    usuario = usuario_dao.buscar_por_id(request.form['usuario'], request.form['senha'])
+
+    if usuario:
+        session['usuario_logado'] = usuario.id
+        flash(usuario.nome + ' logou com sucesso!')
+        proxima_pagina = request.form['proxima']
+        return redirect(proxima_pagina)
     else:
         flash('Usuario ou senha incorreto')
         return redirect(url_for('login'))
