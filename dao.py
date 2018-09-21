@@ -1,7 +1,7 @@
 import sqlite3
 from models import Jogo, Usuario
 
-SQL_DELETA_JOGO = 'DELETE FROM jogo where id = %s'
+SQL_DELETA_JOGO = 'DELETE FROM jogo where id = ?'
 SQL_JOGO_POR_ID = 'SELECT id, nome, categoria, console FROM jogo WHERE id = ?'
 SQL_USUARIO_POR_ID = 'SELECT id, nome, senha FROM usuario WHERE id = ? and senha = ?'
 SQL_ATUALIZA_JOGO = 'UPDATE jogo SET nome = ?, categoria = ?, console = ? WHERE id = ?'
