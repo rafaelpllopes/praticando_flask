@@ -12,12 +12,17 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="/">Navbar</a>
+    <a class="navbar-brand text-uppercase" href="/">Jogoteca</a>
 
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item">
-          <a class="nav-item nav-link" href="/novo">Novo</a>
+          <a class="nav-item nav-link" href="/">Home</a>
+        </li>
+        <li>
+            {% if usuario != None %}
+                <a class="nav-item nav-link" href="/usuario">Usuario</a>
+            {% endif %}
         </li>
       </ul>
       <span class="navbar-text mr-2">
@@ -42,7 +47,7 @@
             {% if messages %}
                 <ul id="messages" class="list-unstyled">
                 {% for message in messages %}
-                    <li class="alert alert-success">{{ message }}</li>
+                    <li class="alert alert-info text-center">{{ message }}</li>
                 {% endfor %}
                 </ul>
             {% endif %}
