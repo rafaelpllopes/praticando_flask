@@ -13,7 +13,9 @@ cursor.execute(
         id BLOB UNIQUE PRIMARY KEY,
         nome VARCHAR(50) NOT NULL,
         categoria VARCHAR(40) NOT NULL,
-        console VARCHAR(20) NOT NULL );
+        console VARCHAR(20) NOT NULL,
+        capa VARCHAR(100)
+    );
     """)
 
 cursor.execute(

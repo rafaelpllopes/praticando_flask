@@ -39,7 +39,7 @@ def criar():
         try:
             upload_path = app.config['UPLOAD_PATH']
             arquivo = request.files['arquivo']
-            arquivo.save(f'{upload_path}/{jogo.id}.jpg')
+            arquivo.save(f'{upload_path}/{jogo.capa}.jpg')
         except:
             pass
 
@@ -55,23 +55,29 @@ def editar(id):
     if 'usuario_logado' not in session or session['usuario_logado'] == None:
         flash('Usuario deve se logar')
         return  redirect(url_for('login', proxima=url_for('editar')))
-
-    return render_template('editar.html', titulo='Editar Jogo', jogo =jogo_dao.busca_por_id(id), capa_jogo=f'{id}.jpg', usuario=session['usuario_logado'])
+    jogo = jogo_dao.busca_por_id(id)
+    return render_template('editar.html', titulo='Editar Jogo', jogo =jogo, capa_jogo=f'{jogo.capa}.jpg', usuario=session['usuario_logado'])
 
 @app.route('/atualizar', methods=['POST'])
 def atualizar():
     try:
-
         nome = request.form['nome']
         categoria = request.form['categoria']
         console = request.form['console']
         id = request.form['id']
-        jogo = jogo_dao.salvar(Jogo(nome, categoria, console, id))
+
+        jogo_anterior = jogo_dao.busca_por_id(id)
+        jogo = jogo_dao.salvar(Jogo(nome, categoria, console, None, id))
+
+        try:
+            remover_arquivo(jogo_anterior.capa)
+        except:
+            pass
 
         try:
             arquivo = request.files['arquivo']
             upload_path = app.config['UPLOAD_PATH']
-            arquivo.save(f'{upload_path}/{jogo.id}.jpg')
+            arquivo.save(f'{upload_path}/{jogo.capa}.jpg')
         except:
             pass
 
@@ -87,16 +93,20 @@ def atualizar():
 @app.route('/deletar/<id>')
 def deletar(id):
     try:
+        jogo = jogo_dao.busca_por_id(id)
         jogo_dao.deletar(id)
         try:
-            upload_path = app.config['UPLOAD_PATH']
-            os.remove(f'{upload_path}/{id}.jpg')
+            remover_arquivo(jogo.capa)
         except:
             pass
         flash('O jogo foi removido com sucesso')
     except:
         flash('Ocorreu um erro ao deletar')
     return redirect(url_for('index'))
+
+def remover_arquivo(img):
+    upload_path = app.config['UPLOAD_PATH']
+    os.remove(f'{upload_path}/{img}.jpg')
 
 @app.route('/login')
 def login():

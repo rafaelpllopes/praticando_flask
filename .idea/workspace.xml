@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fabc6c4-f0a2-4623-8a02-ff1b9c547dd6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/editar_usuario.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/novo_usuario.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/usuario_lista.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/jquery.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao.py" beforeDir="false" afterPath="$PROJECT_DIR$/dao.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/db_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/db/db_schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/jogoteca.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/jogoteca.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/jogoteca.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jogoteca.py" beforeDir="false" afterPath="$PROJECT_DIR$/jogoteca.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/editar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/editar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/novo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/novo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,45 +30,67 @@
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="css" value="2" />
           <entry key="gitignore" value="2" />
-          <entry key="html" value="42" />
+          <entry key="html" value="50" />
+          <entry key="js" value="3" />
           <entry key="md" value="1" />
-          <entry key="py" value="40" />
+          <entry key="py" value="56" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="42" />
+          <entry key="CSS" value="2" />
+          <entry key="HTML" value="50" />
+          <entry key="JavaScript" value="3" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="40" />
+          <entry key="Python" value="56" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="css" value="37" />
           <entry key="dummy" value="13" />
           <entry key="gitignore" value="38" />
-          <entry key="html" value="2344" />
-          <entry key="py" value="7230" />
+          <entry key="html" value="2470" />
+          <entry key="py" value="8004" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="2344" />
+          <entry key="CSS" value="37" />
+          <entry key="HTML" value="2470" />
           <entry key="PLAIN_TEXT" value="51" />
-          <entry key="Python" value="7230" />
+          <entry key="Python" value="8004" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jogoteca.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="74" column="16" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#105#0" expanded="true" />
+                <marker date="1537580003984" expanded="true" signature="373:374" ph="..." />
+                <marker date="1537580003984" expanded="true" signature="3099:3187" ph="..." />
+                <marker date="1537580003984" expanded="true" signature="5885:5887" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -79,6 +103,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>print</find>
+      <find>remover</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -95,24 +120,28 @@
         <option value="$PROJECT_DIR$/templates/edit.html" />
         <option value="$PROJECT_DIR$/templates/excluir.html" />
         <option value="$PROJECT_DIR$/templates/lista.html" />
-        <option value="$PROJECT_DIR$/templates/editar.html" />
-        <option value="$PROJECT_DIR$/templates/novo.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/db/db_schema.py" />
-        <option value="$PROJECT_DIR$/models.py" />
         <option value="$PROJECT_DIR$/templates/usuario.html" />
         <option value="$PROJECT_DIR$/templates/novo_usuario.html" />
         <option value="$PROJECT_DIR$/templates/usuario_lista.html" />
-        <option value="$PROJECT_DIR$/templates/template.html" />
         <option value="$PROJECT_DIR$/templates/editar_usuario.html" />
-        <option value="$PROJECT_DIR$/jogoteca.py" />
+        <option value="$PROJECT_DIR$/static/app.js" />
+        <option value="$PROJECT_DIR$/static/jquery.js" />
+        <option value="$PROJECT_DIR$/templates/template.html" />
+        <option value="$PROJECT_DIR$/templates/novo.html" />
+        <option value="$PROJECT_DIR$/static/app.css" />
+        <option value="$PROJECT_DIR$/models.py" />
+        <option value="$PROJECT_DIR$/templates/editar.html" />
         <option value="$PROJECT_DIR$/dao.py" />
+        <option value="$PROJECT_DIR$/db/db_schema.py" />
+        <option value="$PROJECT_DIR$/jogoteca.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="832" />
     <option name="y" value="25" />
-    <option name="width" value="459" />
+    <option name="width" value="534" />
     <option name="height" value="743" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -143,6 +172,11 @@
             <path>
               <item name="praticando_flask" type="b2602c69:ProjectViewProjectNode" />
               <item name="praticando_flask" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="praticando_flask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="praticando_flask" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -222,8 +256,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.jogoteca" />
         <item itemvalue="Python.db_schema" />
+        <item itemvalue="Python.jogoteca" />
       </list>
     </recent_temporary>
   </component>
@@ -241,14 +275,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1366" height="743" extended-state="6" />
+    <frame x="832" y="25" width="534" height="743" extended-state="4" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49878347" weight="0.39612806" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49878347" weight="0.8003914" />
       <window_info id="Structure" order="1" sideWeight="0.50121653" side_tool="true" weight="0.39612806" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32952693" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32952693" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32952693" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39967373" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -310,37 +345,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/db_schema.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-            <marker date="1537500376653" expanded="true" signature="702:707" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/editar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="2" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#figure#0;n#div#0;n#form#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/novo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="178" selection-end-line="30" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#figure#0;n#div#0;n#form#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/lista.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -362,13 +366,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/usuario_lista.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -376,31 +373,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="78" selection-start-line="7" selection-start-column="78" selection-end-line="7" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="46" column="4" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/novo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/editar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="79" selection-start-line="5" selection-start-column="79" selection-end-line="5" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+        <state relative-caret-position="90">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dao.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        <state relative-caret-position="-256">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1537508544297" expanded="true" signature="2578:2812" ph="..." />
+            <marker date="1537579540852" expanded="true" signature="2812:3046" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/db_schema.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="45" column="57" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1537579832772" expanded="true" signature="733:738" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jogoteca.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-196">
-          <caret line="94" column="16" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="16" />
+        <state relative-caret-position="207">
+          <caret line="74" column="16" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
           <folding>
             <element signature="e#0#105#0" expanded="true" />
-            <marker date="1537509572984" expanded="true" signature="373:374" ph="..." />
+            <marker date="1537580003984" expanded="true" signature="373:374" ph="..." />
+            <marker date="1537580003984" expanded="true" signature="3099:3187" ph="..." />
+            <marker date="1537580003984" expanded="true" signature="5885:5887" ph="..." />
           </folding>
         </state>
       </provider>

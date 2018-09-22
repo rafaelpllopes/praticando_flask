@@ -1,15 +1,16 @@
 import sqlite3
 import uuid
+import time
 from models import Jogo, Usuario
 
 SQL_DELETA_JOGO = 'DELETE FROM jogo where id = ?'
-SQL_JOGO_POR_ID = 'SELECT id, nome, categoria, console FROM jogo WHERE id = ?'
+SQL_JOGO_POR_ID = 'SELECT id, nome, categoria, console, capa FROM jogo WHERE id = ?'
 SQL_USUARIO_POR_ID = 'SELECT id, nome FROM usuario WHERE id = ?'
 SQL_USUARIO_AUTENTICAR = 'SELECT id, nome FROM usuario WHERE id = ? and senha = ?'
-SQL_ATUALIZA_JOGO = 'UPDATE jogo SET nome = ?, categoria = ?, console = ? WHERE id = ?'
-SQL_BUSCA_JOGOS = 'SELECT id, nome, categoria, console FROM jogo'
+SQL_ATUALIZA_JOGO = 'UPDATE jogo SET nome = ?, categoria = ?, console = ?, capa = ? WHERE id = ?'
+SQL_BUSCA_JOGOS = 'SELECT id, nome, categoria, console, capa FROM jogo'
 SQL_BUSCA_USUARIOS = 'SELECT id, nome FROM usuario'
-SQL_CRIA_JOGO = 'INSERT INTO jogo (id, nome, categoria, console) VALUES (?, ?, ?, ?)'
+SQL_CRIA_JOGO = 'INSERT INTO jogo (id, nome, categoria, console, capa) VALUES (?, ?, ?, ?, ?)'
 SQL_CRIA_USUARIO = 'INSERT INTO usuario (id, nome, senha) VALUES (?, ?, ?)'
 SQL_ATUALIZA_USUARIO = 'UPDATE usuario SET nome = ?, senha = ? WHERE id = ?'
 SQL_DELETA_USUARIO = 'DELETE FROM usuario where id = ?'
@@ -25,10 +26,14 @@ class JogoDao:
         cursor = conn.cursor()
 
         if (jogo.id):
-            cursor.execute(SQL_ATUALIZA_JOGO, (jogo.nome, jogo.categoria, jogo.console, jogo.id))
+            img_nome = f'{jogo.id}-{time.time()}'
+            cursor.execute(SQL_ATUALIZA_JOGO, (jogo.nome, jogo.categoria, jogo.console, img_nome, jogo.id))
+            jogo.capa = img_nome
         else:
             id = str(uuid.uuid4())
-            cursor.execute(SQL_CRIA_JOGO, (id, jogo.nome, jogo.categoria, jogo.console))
+            img_nome = f'{id}-{time.time()}'
+            cursor.execute(SQL_CRIA_JOGO, (id, jogo.nome, jogo.categoria, jogo.console, img_nome))
+            jogo.capa = img_nome
             jogo.id = id
 
         conn.commit()
@@ -49,7 +54,7 @@ class JogoDao:
         cursor.execute(SQL_JOGO_POR_ID, (id,))
         tupla = cursor.fetchone()
         conn.close()
-        return Jogo(tupla[1], tupla[2], tupla[3], id=tupla[0])
+        return Jogo(tupla[1], tupla[2], tupla[3], tupla[4], id=tupla[0])
 
     def deletar(self, id):
         conn = self.__db.connect(self.__db_name)
@@ -113,7 +118,7 @@ class UsuarioDao:
 
 def traduz_jogos(jogos):
     def cria_jogo_com_tupla(tupla):
-        return Jogo(tupla[1], tupla[2], tupla[3], id=str(tupla[0]))
+        return Jogo(tupla[1], tupla[2], tupla[3], tupla[4], id=str(tupla[0]))
     return list(map(cria_jogo_com_tupla, jogos))
 
 

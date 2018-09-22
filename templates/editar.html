@@ -3,7 +3,7 @@
       <form method="post" action="{{ url_for('atualizar') }}" enctype="multipart/form-data">
          <div class="text-center">
             <figure class="figure">
-                <img src="{{ url_for('imagens', nome_arquivo=capa_jogo) }}" class="figure-img img-fluid rounded" style="max-width: 25%; max-height: 25%;" atl="Imagem do jogo {{ jogo.nome }}">
+                <img src="{{ url_for('imagens', nome_arquivo=capa_jogo) }}" class="figure-img img-fluid rounded" atl="Onde fica a imagem">
                 <figcaption class="figure-caption">
                     <label>
                         <input type="file" accept=".jpg" id="arquivo" name="arquivo">
