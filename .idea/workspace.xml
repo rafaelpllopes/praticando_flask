@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fabc6c4-f0a2-4623-8a02-ff1b9c547dd6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao.py" beforeDir="false" afterPath="$PROJECT_DIR$/dao.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/db_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/db/db_schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/jogoteca.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/jogoteca.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jogoteca.py" beforeDir="false" afterPath="$PROJECT_DIR$/jogoteca.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/editar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/editar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/novo.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/novo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,11 +26,11 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="2" />
-          <entry key="gitignore" value="2" />
+          <entry key="gitignore" value="3" />
           <entry key="html" value="50" />
           <entry key="js" value="3" />
           <entry key="md" value="1" />
-          <entry key="py" value="56" />
+          <entry key="py" value="57" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -50,15 +39,15 @@
           <entry key="HTML" value="50" />
           <entry key="JavaScript" value="3" />
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="56" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="Python" value="57" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="37" />
           <entry key="dummy" value="13" />
-          <entry key="gitignore" value="38" />
+          <entry key="gitignore" value="39" />
           <entry key="html" value="2470" />
           <entry key="py" value="8004" />
         </counts>
@@ -67,7 +56,7 @@
         <counts>
           <entry key="CSS" value="37" />
           <entry key="HTML" value="2470" />
-          <entry key="PLAIN_TEXT" value="51" />
+          <entry key="PLAIN_TEXT" value="52" />
           <entry key="Python" value="8004" />
         </counts>
       </usages-collector>
@@ -75,17 +64,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jogoteca.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="74" column="16" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
+            <state relative-caret-position="119">
+              <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
               <folding>
                 <element signature="e#0#105#0" expanded="true" />
                 <marker date="1537580003984" expanded="true" signature="373:374" ph="..." />
                 <marker date="1537580003984" expanded="true" signature="3099:3187" ph="..." />
                 <marker date="1537580003984" expanded="true" signature="5885:5887" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/db_schema.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="27" column="4" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+                <marker date="1537579832772" expanded="true" signature="733:738" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -120,7 +131,6 @@
         <option value="$PROJECT_DIR$/templates/edit.html" />
         <option value="$PROJECT_DIR$/templates/excluir.html" />
         <option value="$PROJECT_DIR$/templates/lista.html" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/templates/usuario.html" />
         <option value="$PROJECT_DIR$/templates/novo_usuario.html" />
         <option value="$PROJECT_DIR$/templates/usuario_lista.html" />
@@ -135,6 +145,7 @@
         <option value="$PROJECT_DIR$/dao.py" />
         <option value="$PROJECT_DIR$/db/db_schema.py" />
         <option value="$PROJECT_DIR$/jogoteca.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -338,13 +349,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data base/db_schema.py" />
     <entry file="file://$PROJECT_DIR$/templates/excluir.html" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/lista.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -433,10 +437,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jogoteca.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+          <folding>
+            <element signature="e#0#105#0" expanded="true" />
+            <marker date="1537580003984" expanded="true" signature="373:374" ph="..." />
+            <marker date="1537580003984" expanded="true" signature="3099:3187" ph="..." />
+            <marker date="1537580003984" expanded="true" signature="5885:5887" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/db/db_schema.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="45" column="57" selection-start-line="45" selection-start-column="57" selection-end-line="45" selection-end-column="57" />
+        <state relative-caret-position="84">
+          <caret line="27" column="4" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
             <marker date="1537579832772" expanded="true" signature="733:738" ph="..." />
@@ -444,16 +461,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jogoteca.py">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="74" column="16" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#105#0" expanded="true" />
-            <marker date="1537580003984" expanded="true" signature="373:374" ph="..." />
-            <marker date="1537580003984" expanded="true" signature="3099:3187" ph="..." />
-            <marker date="1537580003984" expanded="true" signature="5885:5887" ph="..." />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
         </state>
       </provider>
     </entry>
